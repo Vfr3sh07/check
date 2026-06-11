@@ -984,7 +984,7 @@ body{font-family:'Nunito',sans-serif;background:#1A0202;overflow:hidden;height:1
   <div class="soulmate-inner">
     <div class="sm-big-text">"the girl who proved<br>"soulmates" are real"</div>
     <p class="sm-sub-text">
-      Some people walk into your life and rearrange everything. They don't try to fix you — they just sit with you in the messy, imperfect, beautiful middle of it all. That's who you are to me. The kind of person people write about, paint about, remember forever.
+      Some people walk into your life and rearrange everything. They don't try to fix you, they just sit with you in the messy, imperfect, beautiful middle of it all. That's who you are to me. The kind of person people write about, paint about, remember forever.
     </p>
     <div class="sm-collage">
       <div style="position:relative;width:clamp(130px,20vw,180px)">
@@ -1011,7 +1011,7 @@ body{font-family:'Nunito',sans-serif;background:#1A0202;overflow:hidden;height:1
         <div class="sm-pol" style="transform:rotate(-2deg)">
           <div class="sm-tape"></div>
           <img src="" alt="" onerror="this.style.background='linear-gradient(135deg,#ffd6cc,#f4a261)'" style="width:100%;aspect-ratio:1;object-fit:cover;display:block">
-          <div class="sm-pol-cap">legends 🏆</div>
+          <div class="sm-pol-cap">2 BKL in a frame 🏆</div>
         </div>
         <div class="sm-sticker" style="top:-8px;right:-12px;animation-delay:1s">💫</div>
       </div>
@@ -1019,7 +1019,7 @@ body{font-family:'Nunito',sans-serif;background:#1A0202;overflow:hidden;height:1
     <div style="text-align:center;margin-top:24px;position:relative;z-index:2">
       <span style="font-size:32px">🧡 🌸 ⭐ 🎀 💫</span>
     </div>
-    <button class="sm-continue-btn" onclick="showScreen('s-choice')">one last thing before we continue 💌</button>
+    <button class="sm-continue-btn" onclick="showScreen('s-choice')">one last thing before my gift is about to end 💌</button>
   </div>
 </div>
 
@@ -1231,15 +1231,15 @@ const IMAGES = {
   reveal:    'pic31.jpg',   // Photo reveal ejected polaroid
 
   soulmate: [                       // Soulmate scrapbook (3 polaroids)
-    'pic23.jpg',
+    'pic3.jpg',
     'pic22.jpg',
-    'pic14.jpg',
+    'pic19.jpg',
   ],
 
   envelope: [                       // Envelope side strip (4 photos)
-    'pic7.jpg',
+    'pic32.jpg',
     'pic24.jpg',
-    'pic15.jpg',
+    'pic18.jpg',
     'pic14.jpg',
   ],
 
@@ -1296,7 +1296,10 @@ function injectStaticImages(){
 
   // Photo reveal screen
   const revImg=document.querySelector('#reveal-pol img');
-  if(revImg){ revImg.src=IMAGES.reveal; revImg.onerror=()=>{ revImg.style.background='linear-gradient(135deg,#ffd6cc,#f4a261)'; revImg.src=''; }; }
+  if(revImg){
+    revImg.onerror=function(){this.onerror=null;this.style.background='linear-gradient(135deg,#ffd6cc,#f4a261)';};
+    revImg.src=IMAGES.reveal;
+  }
 
   // Soulmate scrapbook — three sm-pol img elements in order
   document.querySelectorAll('.sm-pol img').forEach((el,i)=>{
@@ -1351,23 +1354,77 @@ And when life gets difficult, as it sometimes does — may you always find someo
 Happy Birthday, Aaisha.
 May seventeen be everything you need it to be. 🎂`;
 
-const VENKY_LETTER_CONTENT=`May every dream you're scared to say out loud still find its way to you 💛
+const VENKY_LETTER_CONTENT=`Aaisha,
+
+May every dream you're scared to say out loud still find its way to you 💛
+
+And honestly? I hope life gives you every single thing you've quietly wished for, because if there's one thing I've learned about you, it's that no matter what gets thrown at you, you keep going.
+
+The last 6 months haven't exactly been easy on you. I've seen the stress, the frustration, the random breakdowns over things people think are small but actually aren't. I've seen how you've handled situations at home, how you've dealt with things with your mom and dad, and how you've carried yourself even when it would've been easier to just give up.
+
+And that's probably what makes me most proud of you.
+
+Not your achievements.
+Not your marks.
+Not your wins.
+
+You.
+
+The person who somehow keeps getting back up. The person who cries over choti choti baatein but still refuses to quit. The person who keeps fighting even when nobody sees the battle. And for whatever it's worth, I need you to know that I've always been proud of you. Not sometimes. Not only when things are going well.
+
+ALWAYS.
+
+Whether you're winning, struggling, confused, angry, crying, overthinking, being annoying, or being the biggest bakchod on the planet.
+
+ALWAYS.
+
+Life's gonna try you, slow you down, confuse you, and sometimes make you question yourself. But remember, you're built different.
 
 Stay smiling. Stay bakchod. Stay exactly the way you are.
 
-Life's gonna try you, slow you down, confuse you — but remember, you're built different.
+And before you start acting all emotional after reading this, remember one thing: You have a nalla bhai. Haan, Germany mein baitha hua hai. Haan, kabhi kabhi replies bhi nahi deta. Haan, reels ignore karne wali best friend ko tolerate bhi karta hai. But no matter where I am, I'm always in your corner.
 
-Stay Goated 🐐 Trust your path. Trust your timing but at the same time always listen to ur elders (me, cz mere instincts goated hote hai)!
+ALWAYS.
 
-Ik i have never appreciated u enough but forever grateful to have u as my homegirl, my reels ignoring friend, mere rr specialist — but nothing beats crying on choti choti baate but NEVER GIVING UP wali bkl (learning from bade bhaiya himself 🐐).
+Whether you need advice, someone to listen to your RR, someone to tell you you're overthinking, or someone to remind you that you're actually stronger than you think.
 
-And ik this is not a great gift, but thats all i could do using my CS ke skills. Future mai fs isse accha birthday wish/gift — 18th pe isse crazy karna padega, idk what I'll do but next year ka next year.
+Stay Goated 🐐
 
-Never forgetting gpt ka wish, obv. 😂
+Trust your path.
 
-n DONT CRY HAAAA cz of this faltu wishing technique venky has used 😂 Last year bhoomi ka bday gift dekhne ke baad mere andar ka mard ego hurt hua, like i didnt gift u acche se — isliye ye bakchodi hehe.
+Trust your timing.
 
-From a bhai/father/grandpa idk what I am atp — but ALWAYS by your side, ALWAYS PROUD of YOU, hoping on seeing you soon! 💫`;
+But at the same time, always listen to your elders.
+
+(Me. Obviously. Mere instincts goated hote hain.)
+
+And honestly, I don't think I've appreciated you enough.
+
+So thank you.
+
+For being my homegirl. My reels-ignoring friend. My RR specialist. My professional overthinker. And somehow one of the strongest people I know.
+
+Nothing beats crying over random things and then getting up like nothing happened. Learning from Bade Bhaiya himself 🐐.
+
+Aur ha, I know this isn't some crazy expensive gift. It's literally just me using my CS skills, but last year after seeing Bhoomi's birthday gift last year, mere andar ka mard ego hurt ho gaya tha.
+
+I was like, nah bhai, Aaisha keliye bhi kuch alag karna padega yeh saal.
+
+So congratulations. You are now a victim of Venky's bakchodi.
+
+Future mein pakka isse better gift. 18th birthday pe toh kuch next-level karna padega. Ab kya karunga mujhe khud nahi pata. That's a problem for future Venky.
+
+And one last thing.
+
+DON'T CRY HAAAAA.
+
+From your bhai / father / grandfather / whatever I am at this point—
+
+Always by your side.
+
+Always proud of you.
+
+And hopefully seeing you soon. 💫`;
 
 const LC_PHRASES=[
   {t:'और जब तुम्हें\nरोशनी ना मिले,\nमैं वादा करता हूँ\nमैं अंधेरे में\nतुम्हारे साथ बैठूँगा!',c:'#FFB380',sz:'xl',rot:-8},
@@ -1596,21 +1653,50 @@ function buildCamSparks(){
 function doReveal(){
   const pol=document.getElementById('reveal-pol');
   const img=pol?pol.querySelector('img'):null;
+
+  // Reset polaroid state
   pol.classList.remove('shown');
   pol.style.animation='none';
   pol.style.opacity='0';
-  if(img){img.style.filter='brightness(3) saturate(0)';img.style.transition='none';}
   void pol.offsetWidth;
-  setTimeout(()=>{
-    pol.classList.add('shown');
-    // image "develops" from overexposed white to normal
-    if(img){
+
+  // Directly assign src — don't rely on injectStaticImages timing
+  if(img){
+    img.style.filter='none';
+    img.style.transition='none';
+    img.style.opacity='1';
+    img.onerror=function(){this.onerror=null;this.style.background='linear-gradient(135deg,#ffd6cc,#f4a261)';};
+    img.onload=function(){
+      // Image loaded — start eject + develop animation
+      img.style.filter='brightness(3) saturate(0)';
       setTimeout(()=>{
-        img.style.transition='filter 1.8s ease';
-        img.style.filter='brightness(1) saturate(1)';
-      },700);
+        pol.classList.add('shown');
+        setTimeout(()=>{
+          img.style.transition='filter 1.8s ease';
+          img.style.filter='brightness(1) saturate(1)';
+        },700);
+      },300);
+    };
+    // If already cached (src unchanged), onload won't fire — handle that
+    const targetSrc = IMAGES.reveal;
+    if(img.src && img.src.includes(targetSrc) && img.complete && img.naturalWidth>0){
+      // Already loaded — trigger manually
+      img.style.filter='brightness(3) saturate(0)';
+      setTimeout(()=>{
+        pol.classList.add('shown');
+        setTimeout(()=>{
+          img.style.transition='filter 1.8s ease';
+          img.style.filter='brightness(1) saturate(1)';
+        },700);
+      },300);
+    } else {
+      img.src = targetSrc;
     }
-  },300);
+  } else {
+    // No img found — just show polaroid anyway
+    setTimeout(()=>pol.classList.add('shown'),300);
+  }
+
   // Floating stars
   const sc=document.getElementById('reveal-stars');
   sc.innerHTML='';
